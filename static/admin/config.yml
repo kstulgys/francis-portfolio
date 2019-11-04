@@ -15,3 +15,20 @@ collections:
       - { name: title, label: Title }
       - { name: description, label: Description, widget: markdown }
       - { name: body, label: Body, widget: markdown }
+
+  - name: pages
+    label: Pages
+    files:
+      - label: Home Page
+        name: home
+        file: content/pages/home.yml
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: markdown }
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Position, name: position, widget: string }
+              - { label: Photo, name: photo, widget: image }
