@@ -1,0 +1,15 @@
+title: Superb Title
+intro: |-
+  Hey ya all!!!
+
+  This is Rich text
+
+  this is list i.e.
+
+  * one 
+  * two 
+  * three
+team:
+  - name: Karolis
+    photo: /assets/felipe-giacometti-gva0tyogvfu-unsplash.jpg
+    position: web engineer
