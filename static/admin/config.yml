@@ -24,3 +24,4 @@ collections:
         file: content/pages/home.md
         fields:
           - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: markdown }
