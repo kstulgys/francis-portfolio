@@ -8,9 +8,9 @@ import Button from "../components/button"
 class IndexPage extends React.Component {
   render() {
     const siteTitle = "Gatsby Starter Personal Website"
-
+    const title = this.props.data.markdownRemark.frontmatter.title
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location} title={title}>
         <SEO
           title="Home"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
@@ -31,5 +31,15 @@ class IndexPage extends React.Component {
     )
   }
 }
+
+export const pageQuery = graphql`
+  query {
+    markdownRemark(fileAbsolutePath: { regex: "/home.md/" }) {
+      frontmatter {
+        title
+      }
+    }
+  }
+`
 
 export default IndexPage
