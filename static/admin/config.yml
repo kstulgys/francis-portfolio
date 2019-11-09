@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  branch: master
 
 media_folder: static/assets
 public_folder: assets
@@ -19,9 +20,9 @@ collections:
   - name: pages
     label: Pages
     files:
-      - label: Home Page
+      - file: content/pages/home.md
+        label: Home Page
         name: home
-        file: content/pages/home.md
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Body, name: body, widget: markdown }
